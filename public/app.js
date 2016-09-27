@@ -1,5 +1,7 @@
-
-   
+moveOnClick = function(map) {
+  var newCenter = { lat: 52.406822, lng: -1.519693 };
+  map.googleMap.panTo(newCenter);
+}
 
 var initialize = function() {
   var container = document.getElementById('map');
@@ -9,12 +11,8 @@ var initialize = function() {
   // map.addClickEvent();
 
   // Move Locations button
-  moveOnClick = function() {
-    var newCenter = { lat: 52.406822, lng: -1.519693 };
-    map.panTo(newCenter);
-  }
   var button = document.querySelector('button');
-  button.onclick = moveOnClick();
+  button.onclick = moveOnClick(map);
 }
 
 window.onload = initialize;
