@@ -3,7 +3,7 @@ var initialize = function() {
   var center = { lat: 55.94716, lng: -3.20198 }
   var map = new Map(container, center, 10);
   map.addMarker(center);
-  map.addClickEvent();
+  // map.addClickEvent();
 }
 
 window.onload = initialize;

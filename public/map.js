@@ -10,11 +10,7 @@ var Map = function(container, coords, zoom) {
 Map.prototype = {
 
   addMarker: function(coords) {
-    var marker = new google.maps.Marker({
-      position: coords,
-      map: this.googleMap,
-      label: "1"
-    })
+    var marker = new Marker( coords, this.googleMap )
   },
 
   addClickEvent: function() {
